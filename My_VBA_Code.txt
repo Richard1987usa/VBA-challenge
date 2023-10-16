@@ -3,18 +3,18 @@ Sub My_Macro()
   For Each Current In ThisWorkbook.Worksheets
   Current.Activate
 
-    ' Set an initial variable for holding the ticker name
+    ' Initial variable for holding the ticker name
     Dim ticker_name As String
 
-    ' Set an initial variable for holding the total per ticker
+    ' Initial variable for holding the total per ticker
     Dim total_volume As Double
     total_volume = 0
 
-    ' Keep track of the location for each ticker in the summary table
+    ' Check the location for each ticker in the summary table
     Dim Summary_Table_Row As Integer
     Summary_Table_Row = 2
   
-    ' Set the header of summary table
+    ' Header of summary table
     Range("I1") = "Ticker"
     Range("J1") = "Yearly Change"
     Range("K1") = "Percent Change"
@@ -25,10 +25,10 @@ Sub My_Macro()
     Range("P1") = "Ticker"
     Range("Q1") = "Value"
   
-    'Set the last row
+    'Last row
     lastrow = Cells(Rows.Count, 1).End(xlUp).Row
   
-    ' Loop through all daily records
+    ' Loop through all records
        For i = 2 To lastrow
         'If previous ticker and current ticker are not the same, then...
         If Cells(i - 1, 1) <> Cells(i, 1) Then
@@ -132,3 +132,9 @@ Sub My_Macro()
  Next
 
 End Sub
+
+
+
+###### Reference: The codes used to establish this VBA were copied through various sources and websites from the internet with most of 
+       the codes copied from : 
+       https://github.com/vmueller13/Stock-Market-Analysis-with-VBA-Scripting/blob/main/Module1_Scripts%20VBA%20Challenge.bas
