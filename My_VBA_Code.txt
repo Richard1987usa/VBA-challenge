@@ -132,9 +132,3 @@ Sub My_Macro()
  Next
 
 End Sub
-
-
-
-###### Reference: The codes used to establish this VBA were copied through various sources and websites from the internet with most of 
-       the codes copied from : 
-       https://github.com/vmueller13/Stock-Market-Analysis-with-VBA-Scripting/blob/main/Module1_Scripts%20VBA%20Challenge.bas
